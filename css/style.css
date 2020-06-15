@@ -1,5 +1,5 @@
 body{
-	background: grey;
+	background: white;
 }
 
 
@@ -12,14 +12,6 @@ body{
         
     }
 
-    .content {
-    	max-width: 80%;
-        min-width: 95%;
-         margin: 10px auto 10px auto;
-        padding: 20px;
-        border: 1px solid #000;
-        background-color: #ffffff;
-    }
 a:hover{
     color: black;
 }
