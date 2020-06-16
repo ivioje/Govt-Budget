@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Upload Files</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css">
 </head>
 <body>
-
     <div class="bs-container">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -23,60 +22,55 @@
                     <a href="Profile.html" class="nav-item nav-link active">About</a>
                     <a href="contact.html" class="nav-item nav-link active">Budget</a>
                     <a href="reports.html" class="nav-item nav-link active">FAQ's</a>
-                    <a href="#!" class="nav-item nav-link active" style="color: black;">Admins can fill the form below</a>
-                </div>
-               
+                    <a href="#!" class="nav-item nav-link active" style="color: black;">Upload Recent Budgets</a>
+                </div>       
             </div>
         </nav>
         </div>
     </div>
-    <h4 style="display: flex; align-items: center; justify-content: center;">ADMIN ONLY.</h4>
-<hr>
-    <form action="/action_page.php" method="GET">
-        <label for="Username">Username</label>
-        <input type="username" id="username" name="username"><br><br>
-        <label for="pwd">Password</label>
-        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-        <a href="submit.html" type="submit" id="submit" style="display: flex; justify-content: center; padding-top: 4px;">Continue</a>
-      </form>
-      <hr>
+    <hr>
 
-  <footer class="page-footer font-small blue-grey lighten-5" style="margin-top: 150px;">
+    <div class="upload">
+    <form action="/action_page.php">
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+       <button> <a href="submit.html" type="submit" id="submit" >Upload</a></button>
+      </form>
+</div>
+
+<footer class="page-footer font-small blue-grey lighten-5" style="margin-top: 150px;">
 
     <div style="background-color: #333232;">
       <div class="container">
-  
+
         <div class="row py-4 d-flex align-items-center">
-  
+
           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
             <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
           </div>
-         
+
           <div class="col-md-6 col-lg-7 text-center text-md-right">
-  
   
             <a class="tw-ic" href="https://twitter.com/">
               <i class="fab fa-twitter white-text mr-4"> </i>
             </a>
            
           </div>
-         
   
         </div>
   
-  
       </div>
     </div>
-
+ 
     <div class="container text-center text-md-left mt-5">
-    
-      <div class="row mt-3 dark-grey-text">
   
+      <div class="row mt-3 dark-grey-text">
+
         <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
           <h6 class="text-uppercase font-weight-bold"></h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>The Budget Office of the federal government. Admins' Login Only</p>
+          <p>The Budget Office of the federal government. Update Budget.</p>
   
         </div>
 
@@ -131,12 +125,13 @@
       <a class="dark-grey-text" >Federal Government Budget</a>
     </div>
 
+  
   </footer>
 
+
   <script src="https://kit.fontawesome.com/7fd3eb154a.js" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

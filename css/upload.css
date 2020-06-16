@@ -1,0 +1,40 @@
+form{
+    border: 1px  solid rgb(224, 224, 224);
+    width: 400px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 54px 0px rgba(73, 73, 73, 0.76);
+-moz-box-shadow: 10px 10px 54px 0px rgba(65, 65, 65, 0.76);
+box-shadow: 10px 10px 54px 0px rgba(68, 67, 67, 0.76);
+    
+}
+
+.upload {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#myfile {
+    background: black;
+    color: white;
+}
+
+button {
+    background: black;
+}
+button:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    list-style: none;
+}
